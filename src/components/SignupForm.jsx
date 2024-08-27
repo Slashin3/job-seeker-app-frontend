@@ -26,7 +26,7 @@ const Signup = () => {
     formData.append("resume", resume);
 
     try {
-      await axios.post("http://localhost:5000/api/signup", formData);
+      await axios.post("job-seeker-app-1nec.vercel.app", formData);
       navigate("/success");
     } catch (error) {
       setError("Error during form submission. Please try again.");
